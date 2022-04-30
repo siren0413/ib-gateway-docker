@@ -9,9 +9,10 @@ services:
     environment:
       TWS_USERID: ${TWS_USERID}
       TWS_PASSWORD: ${TWS_PASSWORD}
-      TRADING_MODE: ${TRADING_MODE:-paper}
-      VNC_SERVER_PASSWORD: ${VNC_SERVER_PASSWORD:-}
+      TRADING_MODE: ${TRADING_MODE}
+      VNC_SERVER_PASSWORD: ${VNC_SERVER_PASSWORD}
     ports:
-      - "127.0.0.1:4001:4001"
-      - "127.0.0.1:4002:4002"
-      - "127.0.0.1:5900:5900"
+      - "4001:4001"
+      - "4002:4002"
+      - "5900:5900"
+      - "7462:7462"
